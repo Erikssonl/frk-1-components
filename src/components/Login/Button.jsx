@@ -4,7 +4,7 @@ import styles from "./Login.module.css";
 const Button = ({ btnTitle, style }) => {
   return (
     <div className={styles.buttonContainer}>
-      <button style={{ style }} className={styles.btn}>
+      <button style={style} className={styles.btn}>
         {btnTitle}
       </button>
     </div>
