@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Login.module.css";
 
-const Button = ({ btnTitle, style }) => {
+const Button = ({ btnTitle, style, className }) => {
   return (
     <div className={styles.buttonContainer}>
-      <button style={style} className={styles.btn}>
+      <button style={style} className={`${styles.btn} ${className}`}>
         {btnTitle}
       </button>
     </div>
