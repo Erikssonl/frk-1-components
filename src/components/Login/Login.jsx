@@ -4,7 +4,7 @@ import Password from "./Password";
 import Button from "./Button";
 import styles from "./Login.module.css";
 
-const Login = ({ btnTitle, style, btnClassName }) => {
+const Login = ({ btnTitle, style, btnStyle }) => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   return (
@@ -14,7 +14,7 @@ const Login = ({ btnTitle, style, btnClassName }) => {
       <Button
         btnTitle={btnTitle}
         style={style}
-        className={`${styles.btn} ${btnClassName}`}
+        className={`${styles.btn} ${btnStyle}`}
       />
     </div>
   );
