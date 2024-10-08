@@ -11,7 +11,11 @@ const Login = ({ btnTitle, style, btnStyle }) => {
     <div className={styles.loginContainer}>
       <User setUser={setUser} />
       <Password setPassword={setPassword} />
-      <Button btnTitle={btnTitle} style={style} className={btnStyle} />
+      <Button
+        btnTitle={btnTitle}
+        style={style}
+        className={`${styles.btn} ${btnStyle}`}
+      />
     </div>
   );
 };
